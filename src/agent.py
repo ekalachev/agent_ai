@@ -15,16 +15,6 @@ tools = [
 agent_executor = create_react_agent(model, tools, checkpointer=memory)
 
 
-# def run_agent(user_input: str, thread_id: str):
-#     config = {"configurable": {"thread_id": thread_id}}
-#
-#     for step in agent_executor.stream(
-#             {"messages": [HumanMessage(content=user_input)]},
-#             config,
-#             stream_mode="values",
-#     ):
-#         step["messages"][-1].pretty_print()
-
 def run_agent(user_input: str, thread_id: str) -> str:
     config = {"configurable": {"thread_id": thread_id}}
     response = ""
