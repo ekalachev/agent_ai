@@ -1,0 +1,8 @@
+langchain
+langchain-core
+langchain-community
+langchain-ollama
+langgraph
+tavily-python
+langgraph-checkpoint-sqlite
+gradio
